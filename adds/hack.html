@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>
+			Custom web browser
+		</title>
+	</head>
+
+	<body style="background-color:DodgerBlue", onload="startUp()">
+				<!--Title Page-->
+		<h1 class="rainbowText">
+			Welcome to Anonymous Web Browser!
+		</h1>
+				<!--Tutorial-->
+		You can easily just enter something below and search will begin. <br>
+		<br>
+				<!--Text Box-->
+		<form onsubmit="window.location.href=' https://ersupport.com:443/plugins/QuickWebProxy/miniProxy.php?' + document.getElementById('site').value; return false;">
+
+		<input id="site" type="text" size="50"><input type="submit" value="Search It!"></form> <br>
+			
+
+
+
+
+	<!--Pre Installed Games Buttons-->
+		<button type="button" onclick="Tetris()">
+			Tetris
+		</button>
+
+
+
+				<!--Pre Installed Games Scripts-->
+				<!--Tetris-->
+		<script>
+			function Tetris() {
+  				document.getElementById("site").defaultValue = "https://jstris.jezevec10.com/";
+			}
+		</script>
+				<!--Reddit-->
+
+
+
+
+
+
+				<!--Startup Script-->
+		<script>
+			function startUp() {
+  				document.getElementById("site").defaultValue = "Enter Website URL Here";
+			}
+		</script>
+
+				<!--TIP-->
+	<br><br><br>
+	If the website says something in the lines of the webpage can not be found. Please go into the URL and remove the "&base_url=1"
+
+<!--Rainbow Text Script-->
+
+<script>
+window.addEventListener("load", function() {
+  var elements = document.getElementsByClassName("rainbowText");
+  for (let i = 0; i < elements.length; i++) {
+    generateRainbowText(elements[i]);
+  }
+});
+
+function generateRainbowText(element) {
+  var text = element.innerText;
+  element.innerHTML = "";
+  for (let i = 0; i < text.length; i++) {
+    let charElem = document.createElement("span");
+    charElem.style.color = "hsl(" + (360 * i / text.length) + ",80%,50%)";
+    charElem.innerHTML = text[i];
+    element.appendChild(charElem);
+  }
+}
+</script>
+
+</body>
+</html>

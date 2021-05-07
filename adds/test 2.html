@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>
+			Custom web browser
+		</title>
+	</head>
+
+	<body style="background-color:DodgerBlue", onload="startUp()">
+				<!--Title Page-->
+		<h1 class="rainbowText">
+			Tetris
+		</h1>
+				<!--Tutorial-->
+		Press enter to play. <br>
+		<br>
+				<!--Text Box-->
+		<form onsubmit="window.location.href=' https://ersupport.com:443/plugins/QuickWebProxy/miniProxy.php?' + document.getElementById('site').value; return false;">
+
+		<input id="site" type="text" size="50"><input type="submit" value="Enter"></form> <br>
+			
+
+
+
+
+	<!--Pre Installed Games Buttons-->
+		
+				<!--Pre Installed Games Scripts-->
+				<!--Tetris-->
+		<script>
+			function Tetris() {
+  				document.getElementById("site").defaultValue = "https://jstris.jezevec10.com/";
+			}
+		</script>
+				<!--Reddit-->
+				<script>
+			function Reddit() {
+  				document.getElementById("site").defaultValue = "https://www.reddit.com/r/memes/";
+			}
+		</script>
+				<!Instagram>
+		<script>
+			function Insta() {
+  				document.getElementById("site").defaultValue = "https://www.instagram.com/";
+			}
+		</script>
+
+
+
+
+
+				<!--Startup Script-->
+		<script>
+			function startUp() {
+  				document.getElementById("site").defaultValue = "https://jstris.jezevec10.com/";
+			}
+		</script>
+
+				<!--TIP-->
+	<br><br><br>
+
+<!--Rainbow Text Script-->
+
+<script>
+window.addEventListener("load", function() {
+  var elements = document.getElementsByClassName("rainbowText");
+  for (let i = 0; i < elements.length; i++) {
+    generateRainbowText(elements[i]);
+  }
+});
+
+function generateRainbowText(element) {
+  var text = element.innerText;
+  element.innerHTML = "";
+  for (let i = 0; i < text.length; i++) {
+    let charElem = document.createElement("span");
+    charElem.style.color = "hsl(" + (360 * i / text.length) + ",80%,50%)";
+    charElem.innerHTML = text[i];
+    element.appendChild(charElem);
+  }
+}
+</script>
+
+</body>
+</html>
