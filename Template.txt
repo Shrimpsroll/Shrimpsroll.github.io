@@ -1,0 +1,29 @@
+<html><head>
+			<title>Shrimpys</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<style></style></head>
+		<body data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="">
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="alt/about.html">About</a></li>	    			</ul>
+			</nav>
+			<div class="container">
+			
+			<div class="blurb">
+	
+</div><!-- /.blurb -->
+
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:Don't Stalk Me">email</a></li>
+	        		<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Cool Link</a></li>
+				</ul>
+			</footer>
+		
+
+	
+</body></html>
