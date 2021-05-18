@@ -16,24 +16,23 @@ title: Cookie Clicker Cheats
   <br> 
  <br> 
  <br> /* ******************** Auto Clicker ******************** */
- <br> 
  <br> function clickId(id) {
-  <br>  var element = document.getElementById(id);
- <br> 	if(element !== undefined) {
-		 <br> doEvent(element, "click");
- <br> }
-	 <br> window.setTimeout(clickId, 25, id);
- <br> }
+ <br> var element = document.getElementById(id);
+	<br>if(element !== undefined) {
+		<br>doEvent(element, "click");
+	<br>}
+	<br>window.setTimeout(clickId, 25, id);
+<br>}
 
- <br> function doEvent(element, type) {
-     <br> trigger = document.createEvent('HTMLEvents');
-   <br>   trigger.initEvent(type, true, true);
-    <br>  element.dispatchEvent(trigger);
- <br> 
-
- <br> window.setTimeout(clickId, 25, "bigCookie");
- <br> window.setTimeout(clickId, 25, "goldenCookie");
- <br> Game.cookies = Game.cookies + 1
+<br>function doEvent(element, type) {
+    <br>trigger = document.createEvent('HTMLEvents');
+    <br>trigger.initEvent(type, true, true);
+    <br>element.dispatchEvent(trigger);
+<br>}
+<br>
+<br>window.setTimeout(clickId, 25, "bigCookie");
+<br>window.setTimeout(clickId, 25, "goldenCookie");
+ <br>
  <br> /* ****************** End Auto Clicker ****************** */
  <br> 
  <br>  More Cheats:
