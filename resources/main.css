@@ -73,7 +73,6 @@ a:link, a:visited {
 	margin-left: auto;
 	margin-top: 20px;
 	font-size: 20px;
-	text-shadow: 0 2px rgba(96, 48, 96, 0.8), 0 -1px rgba(255, 200, 255, 0.5);
 }
 
 #controls .bigbutton, #mapping td {
@@ -89,11 +88,6 @@ a:link, a:visited {
 	bottom: 0px;
 	overflow: hidden;
 	padding: 10px 15px;
-	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.2) 12px, rgba(0, 0, 0, 0) 20px), #452e5c;
-	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.2) 12px, rgba(0, 0, 0, 0) 20px), #452e5c;
-	background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.2) 12px, rgba(0, 0, 0, 0) 20px), #452e5c;
-	background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.2) 12px, rgba(0, 0, 0, 0) 20px), #452e5c;
-	-webkit-transition: width ease-out 0.5s, padding ease-out 0.5s;
 	-moz-transition: width ease-out 0.5s, padding ease-out 0.5s;
 	-o-transition: width ease-out 0.5s, padding ease-out 0.5s;
 	transition: width ease-out 0.5s, padding ease-out 0.5s;
