@@ -1,5 +1,5 @@
 body {
-	background: url('bg.png') no-repeat top center, #765490;
+	background: url('bg.png') no-repeat top center,;
 	text-align: center;
 	margin: 0;
 	color: white;
@@ -192,7 +192,6 @@ ul#links li:not(:first-child)::before {
 }
 
 #moreinfo header {
-	background-color: #27282A;
 	margin: 20px 0 0 20px;
 	padding: 20px 30px;
 	border-radius: 10% 10% 50% 50% / 20% 20% 30% 30%;
