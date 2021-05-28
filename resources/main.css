@@ -2,7 +2,7 @@ body {
 	background: url('bg.png') no-repeat top center,;
 	text-align: center;
 	margin: 0;
-	color: white;
+	color: black;
 	font-family: 'Calibri', 'Verdana', sans-serif;
 	overflow: hidden;
 	font-size: 15px;
@@ -60,10 +60,7 @@ a:link, a:visited {
 }
 
 #controls button, #mapping td, #sound, #controls label {
-	background: transparent;
-	border: 0px solid rgba(192, 128, 192, 0.5);
-	border-top: 2px solid rgba(96, 48, 96, 0.8);
-	border-bottom: 2px solid rgba(255, 200, 255, 0.5);
+	background: black;
 	border-radius: 30px;
 	color: white;
 	font-weight: bold;
