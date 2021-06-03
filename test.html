@@ -68,16 +68,9 @@
         <link rel="stylesheet" href="user_css/main.css">
     </head>
     <body>
-    	<script>
-			function Tetris() {
-  				document.getElementById("bios_load").defaultValue = "/Binaries/gba_bios.bin";
-			}
-		</script>
-		<script>
-			function Tetris() {
-  				document.getElementById("rom_load").defaultValue = "/Binaries/pokemonlightplat.gba";
-			}
-		</script>
+    <script>
+    attachBIOS("/Binaries/gba_bios.bin")
+    attachROM("/Binaries/pokemonlightplat.gba")</script>
         <div id="container">
             <div id="menu" class="paused">
                 <ul class="menu" id="menu_top">
