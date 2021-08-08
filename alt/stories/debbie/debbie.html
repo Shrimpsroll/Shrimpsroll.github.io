@@ -208,9 +208,10 @@ console.log(item)
 console.log("If you can see a script below ignore that. It is the school watching what yt clips we can see... I promise its not me spying on you ;)")
 </script><tw-passagedata pid="1" name="discloser" tags="" position="0,0" size="100,100">This is still very Work in progress though if you do like, dont tell me bc i do not care.
 
+
 (live: 5s)[
-	(goto: &quot;start&quot;)]</tw-passagedata><tw-passagedata pid="2" name="start" tags="" position="625,175" size="200,200">&lt;h1&gt;Title&lt;/h1&gt;
-&lt;h3&gt;By Name&lt;/h3&gt;
+	(goto: &quot;start&quot;)]</tw-passagedata><tw-passagedata pid="2" name="start" tags="" position="625,175" size="200,200">&lt;h1&gt;Debbie&#39;s Quest&lt;/h1&gt;
+&lt;h3&gt;Debbie&#39;s Year 8 class of 2020&lt;/h3&gt;
 
 {(if: (saved-games:) contains &quot;Slot C&quot;)[(link: &quot;New Game&quot;)[(goto: &quot;true start&quot;)]]
 (else:)[(link: &quot;Start Game&quot;)[(goto: &quot;true start&quot;)]]}
@@ -256,11 +257,13 @@ console.log("If you can see a script below ignore that. It is the school watchin
 
 
 
-</tw-passagedata><tw-passagedata pid="6" name="true start" tags="" position="1100,300" size="100,100">Type a Name...
+</tw-passagedata><tw-passagedata pid="6" name="true start" tags="" position="898.3333333333333,196.66666666666666" size="100,100">Type a Name...
 
-(input-box:&quot;=XX=&quot;,1)
+(force-input-box:2bind $debbie,&quot;X&quot;,1,&quot;Debbie Jarrod&quot;)
 
-[[Next-&gt;Story Start]]</tw-passagedata><tw-passagedata pid="7" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="" position="600,0" size="100,100">The Story has: 
+(live: 0.1s)[
+	(if: $debbie is &quot;Debbie Jarrod&quot;)[
+		[[Next-&gt;Story Start]]]]</tw-passagedata><tw-passagedata pid="7" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="" position="600,0" size="100,100">The Story has: 
 * $passages passages
 * $links links +- 10
 * $hours hours of cry time
@@ -268,13 +271,13 @@ console.log("If you can see a script below ignore that. It is the school watchin
 (link: &quot;Back&quot;)[
 	(undo:)]</tw-passagedata><tw-passagedata pid="8" name="startup" tags="startup" position="400,0" size="100,100">(set: $passages to 9)
 (set: $links to 2)
-(set: $hours to &quot;too many&quot;)</tw-passagedata><tw-passagedata pid="9" name="Story Start" tags="" position="1100,450" size="100,100">{&lt;!--Save fade start--&gt;
+(set: $hours to &quot;too many&quot;)</tw-passagedata><tw-passagedata pid="9" name="Story Start" tags="" position="903.3333333333333,400" size="100,100">{&lt;!--Save fade start--&gt;
 
 (set: $opacity to 1)
 (set: $opacityfalse to 1)
 
 (link:&quot;Save game&quot;)[
-  (if:(save-game: $name))[
+  (if:(save-game: &quot;Slot C&quot;))[
    	|save&gt;[Game Saved]
 	(after: 4s)[
 		(live: 0.001)[
