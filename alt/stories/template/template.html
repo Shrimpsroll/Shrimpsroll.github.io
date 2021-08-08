@@ -215,9 +215,9 @@ console.log("If you can see a script below ignore that. It is the school watchin
 (link: &quot;Start Story&quot;)[
 	(goto: &quot;true start&quot;)]
 
-(if: (saved-games:) contains &quot;Slot A&quot;)[
+(if: (saved-games:) contains &quot;Slot C&quot;)[
 	(link: &quot;Load Game&quot;)[
-		(load-game: &quot;Slot A&quot;)]]
+		(load-game: &quot;Slot C&quot;)]]
 	
 	
 	
@@ -239,7 +239,7 @@ console.log("If you can see a script below ignore that. It is the school watchin
 (set: $opacityfalse to 1)
 
 (link:&quot;Save game&quot;)[
-  (if:(save-game: &quot;Slot A&quot;))[
+  (if:(save-game: &quot;Slot C&quot;))[
    	|save&gt;[Game Saved]
 	(after: 4s)[
 		(live: 0.001)[
