@@ -215,8 +215,7 @@ console.log("If you can see a script below ignore that. It is the school watchin
 (link: &quot;Start Story&quot;)[
 	(goto: &quot;true start&quot;)]
 
-(link: &quot;Load From Save&quot;)[
-	(goto: &quot;load&quot;)]
+(if: (saved-games:) contains &quot;Slot A&quot;)
 	
 	
 	
@@ -230,7 +229,7 @@ console.log("If you can see a script below ignore that. It is the school watchin
 
 
 
-&lt;!--Header END--&gt;</tw-passagedata><tw-passagedata pid="4" name="footer" tags="footer" position="300,300" size="200,100">{&lt;!--footer start--&gt;
+&lt;!--Header END--&gt;</tw-passagedata><tw-passagedata pid="4" name="footer" tags="footer" position="296,320" size="200,100">{&lt;!--footer start--&gt;
 
 &lt;!--Footer END--&gt;}</tw-passagedata><tw-passagedata pid="5" name="testing" tags="" position="200,1" size="100,100">{&lt;!--Save fade start--&gt;
 
@@ -238,7 +237,7 @@ console.log("If you can see a script below ignore that. It is the school watchin
 (set: $opacityfalse to 1)
 
 (link:&quot;Save game&quot;)[
-  (if:(save-game: $name))[
+  (if:(save-game: &quot;Slot A&quot;))[
    	|save&gt;[Game Saved]
 	(after: 4s)[
 		(live: 0.001)[
@@ -262,27 +261,15 @@ console.log("If you can see a script below ignore that. It is the school watchin
 
 (input-box:&quot;=XX=&quot;,1)
 
-[[Next-&gt;Story Start]]</tw-passagedata><tw-passagedata pid="7" name="load" tags="" position="800,0" size="100,100">To load your game, you must enter your character name.
-(input-box:2bind $saveName,&quot;=XX=&quot;,1)
-{
-(link-repeat: &quot;Load Game&quot;)[
-	(set: $opacitya to 1)
-	(if: (saved-games:) contains $saveName)[
-(load-game: $saveName)]
-(else:)[
-	|yea&gt;[This is no save file on your computer called $saveName
-	(after: 4.5s)[
-		(restart:)]]]]}
-[[Back-&gt;start]]
-		</tw-passagedata><tw-passagedata pid="8" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="" position="600,0" size="100,100">The Story has: 
+[[Next-&gt;Story Start]]</tw-passagedata><tw-passagedata pid="7" name="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" tags="" position="600,0" size="100,100">The Story has: 
 * $passages passages
 * $links links +- 10
 * $hours hours of cry time
 
 (link: &quot;Back&quot;)[
-	(undo:)]</tw-passagedata><tw-passagedata pid="9" name="startup" tags="startup" position="400,0" size="100,100">(set: $passages to 9)
+	(undo:)]</tw-passagedata><tw-passagedata pid="8" name="startup" tags="startup" position="400,0" size="100,100">(set: $passages to 9)
 (set: $links to 2)
-(set: $hours to &quot;too many&quot;)</tw-passagedata><tw-passagedata pid="10" name="Story Start" tags="" position="1100,450" size="100,100">{&lt;!--Save fade start--&gt;
+(set: $hours to &quot;too many&quot;)</tw-passagedata><tw-passagedata pid="9" name="Story Start" tags="" position="1100,450" size="100,100">{&lt;!--Save fade start--&gt;
 
 (set: $opacity to 1)
 (set: $opacityfalse to 1)
