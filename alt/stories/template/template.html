@@ -212,12 +212,9 @@ console.log("If you can see a script below ignore that. It is the school watchin
 	(goto: &quot;start&quot;)]</tw-passagedata><tw-passagedata pid="2" name="start" tags="" position="625,175" size="200,200">&lt;h1&gt;Title&lt;/h1&gt;
 &lt;h3&gt;By Name&lt;/h3&gt;
 
-(link: &quot;Start Story&quot;)[
-	(goto: &quot;true start&quot;)]
-
-(if: (saved-games:) contains &quot;Slot C&quot;)[
-	(link: &quot;Load Game&quot;)[
-		(load-game: &quot;Slot C&quot;)]]
+{(if: (saved-games:) contains &quot;Slot C&quot;)[(link: &quot;New Game&quot;)[(goto: &quot;true start&quot;)]]
+(else:)[(link: &quot;Start Game&quot;)[(goto: &quot;true start&quot;)]]}
+{(if: (saved-games:) contains &quot;Slot C&quot;)[(link: &quot;Load Game&quot;)[(load-game:&quot;Slot 1&quot;)]]}
 	
 	
 	
