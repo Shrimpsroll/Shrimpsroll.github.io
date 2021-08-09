@@ -107,9 +107,9 @@ tw-sidebar {
 }
 /* Links that have already been visited */
 .enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
-	color: #268bd2; 
+	color: #cb4b16; 
 	font-weight: bold; 
-	text-shadow: 0 0 5px #268bd2;
+	text-shadow: 0 0 5px #cb4b16;
 }
 /* Links when the mouse is over them */
 .enchantment-link:hover, tw-link:hover, a:hover {
@@ -136,7 +136,7 @@ tw-sidebar {
 .pulse-in {
     color: #ADC3D8;
     font-size: 1.1em;
-    animation: pulsein 1.2s linear 3;
+    animation: pulsein 1.2s linear 1;
 }
 span.pulse-in {
   font-size: inherit;
@@ -270,8 +270,8 @@ Thanks to Sean, Caleb and Desire for the idea
 * $hours hours of cry time
 
 (link: &quot;Back&quot;)[
-	(undo:)]</tw-passagedata><tw-passagedata pid="8" name="startup" tags="startup" position="400,0" size="100,100">(set: $passages to 9)
-(set: $links to 2)
+	(undo:)]</tw-passagedata><tw-passagedata pid="8" name="startup" tags="startup" position="400,0" size="100,100">(set: $passages to 20)
+(set: $links to 15)
 (set: $hours to &quot;too many&quot;)</tw-passagedata><tw-passagedata pid="9" name="Story Start" tags="" position="903.3333333333333,400" size="100,100">{&lt;!--Save fade start--&gt;
 
 (set: $opacity to 1)
@@ -297,7 +297,10 @@ You must get a job, what do you choose.
 
 [[Become a good teacher]]
 [[Become a bad teacher]]
-[[Become the best teacher]]</tw-passagedata><tw-passagedata pid="10" name="to add" tags="" position="96,204" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Become a good teacher" tags="" position="626.6666666666666,571.6666666666666" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Become a bad teacher" tags="" position="339.9999999999999,458.3333333333333" size="100,100">(goto: &quot;lose&quot;)</tw-passagedata><tw-passagedata pid="13" name="Become the best teacher" tags="" position="1053.3333333333333,550" size="100,100">{&lt;!--Save fade start--&gt;
+[[Become the best teacher]]</tw-passagedata><tw-passagedata pid="10" name="to add" tags="" position="96,204" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Become a good teacher" tags="" position="1311.6666666666665,424.99999999999994" size="100,100">This part isnt finished yet 
+
+(link: &quot;go back&quot;)[
+	(undo:)]</tw-passagedata><tw-passagedata pid="12" name="Become a bad teacher" tags="" position="694.9999999999999,445" size="100,100">(goto: &quot;lose&quot;)</tw-passagedata><tw-passagedata pid="13" name="Become the best teacher" tags="" position="1053.3333333333333,550" size="100,100">{&lt;!--Save fade start--&gt;
 
 (set: $opacity to 1)
 (set: $opacityfalse to 1)
@@ -320,34 +323,65 @@ You must get a job, what do you choose.
 
 Congratulations you are debbie jarrod
 
-(after: 2s)[
-	You head to your new school, Avondale school where you are put onto a contract, you have two very clear favourite students, Caleb and Desire. They are smart and always likes a laugh.]
+(after: 2s)[&lt;span class=&quot;pulse-in&quot;&gt;
+	You head to your new school, Avondale school where you are put onto a contract, you have two very clear favourite students, Caleb and Desire. They are smart and always likes a laugh.&lt;/span&gt;
 	
-(after: time + 3s)[
-	What do you choose for your firse class?
+(after: time + 3s)[&lt;span class=&quot;pulse-in&quot;&gt;
+	What do you choose for your first class?
 	
-	This will make the students like you
-	[[Good Maths]]
+	[[Do Some Good Maths-&gt;Good Maths]] - This will make your students like you
 	
-	This will make the students not like you as much
-	[[Harsh Maths]]]
-	</tw-passagedata><tw-passagedata pid="14" name="Good Maths" tags="" position="978.3333333333333,700" size="100,100">The students love you and after a 3 weeks it finaly time for you classes first maths test, but some of the dumber students (caleb) is ahving some trouble with their test.
+[[Do some Harsh Maths-&gt;Harsh Maths]] - This will make your students hate people.&lt;/span&gt;]]
+	</tw-passagedata><tw-passagedata pid="14" name="Good Maths" tags="" position="978.3333333333333,700" size="100,100">The students love you and after a 3 weeks it finaly time for you classes first maths test, but some of the dumber students (caleb) is having some trouble with their test.
 
+(after: 3s)[&lt;span class=&quot;pulse-in&quot;&gt;
 [[Help the mans out]]
-[[Ignore him-&gt;lose]]
-</tw-passagedata><tw-passagedata pid="15" name="Harsh Maths" tags="" position="1120,713.3333333333333" size="100,100">You are not the best teacher
+[[Ignore him-&gt;lose]]&lt;/span&gt;]
+</tw-passagedata><tw-passagedata pid="15" name="Harsh Maths" tags="" position="1156.6666666666667,693.3333333333333" size="100,100">You are not the best teacher
 
-[[next-&gt;lose]]</tw-passagedata><tw-passagedata pid="16" name="lose" tags="" position="236.66666666666652,460" size="100,100">You became the worst teacher</tw-passagedata><tw-passagedata pid="17" name="Help the mans out" tags="" position="899.9999999999999,896.6666666666666" size="100,100">After the test you get called to the office where a 5 fingered man forehead man who wants to ask why your students are doing well. 
+[[next-&gt;lose]]</tw-passagedata><tw-passagedata pid="16" name="lose" tags="" position="236.66666666666652,460" size="100,100">You became the worst teacher</tw-passagedata><tw-passagedata pid="17" name="Help the mans out" tags="" position="899.9999999999999,896.6666666666666" size="100,100">{&lt;!--Save fade start--&gt;
 
+(set: $opacity to 1)
+(set: $opacityfalse to 1)
+
+(link:&quot;Save game&quot;)[
+  (if:(save-game: &quot;Slot C&quot;))[
+   	|save&gt;[Game Saved]
+	(after: 4s)[
+		(live: 0.001)[
+			(if: $opacity &gt;= 0)[
+			(after: time + 0.01)[
+				(enchant: ?save, (opacity: $opacity))
+				(set: $opacity to $opacity - 0.01)]]]]
+  ](else: )[
+    Sorry, I couldn&#39;t save your game.
+  ]
+]
+&lt;!--god kill me--&gt;
+&lt;!--Save fade END--&gt;}
+After the test you get called to the office where a 5 fingered forehead man who wants to ask why your students are doing well. 
+
+
+(after: 3s)[&lt;span class=&quot;pulse-in&quot;&gt;
 You say that &quot;the students enjoy the subject&quot;
-[[Say this-&gt;option 1]]
+[[Say this-&gt;option 1]]&lt;/span&gt;
 
+(after: time + 2s)[&lt;span class=&quot;pulse-in&quot;&gt;
 You say that &quot;i gave them double the homework than the other teachers&quot;
-[[Say this-&gt;option 2]]</tw-passagedata><tw-passagedata pid="18" name="option 1" tags="" position="824.9999999999999,1046.6666666666665" size="100,100">&quot;Yes they enjoy the subject too much, are you sure your even getting any work done?&quot; the fat orangatang said
+[[Say this-&gt;option 2]]&lt;/span&gt;]]</tw-passagedata><tw-passagedata pid="18" name="option 1" tags="" position="824.9999999999999,1046.6666666666665" size="100,100">&quot;Yes they enjoy the subject too much, are you sure your even getting any work done?&quot; the fat orangatang said is a sad way.
 
-</tw-passagedata><tw-passagedata pid="19" name="option 2" tags="" position="971.6666666666665,1048.333333333333" size="100,100">you have a heart attack after you say this
+(after: 3s)[{
+	&lt;span class=&quot;pulse-in&quot;&gt;}
+	
+	[[Punch the Orangatang lookin ass]]
+	[[Don&#39;t-&gt;lose]]]</tw-passagedata><tw-passagedata pid="19" name="option 2" tags="" position="971.6666666666665,1048.333333333333" size="100,100">you have a heart attack after you say this
 
-[[next-&gt;lose]]</tw-passagedata></tw-storydata>
+[[next-&gt;lose]]</tw-passagedata><tw-passagedata pid="20" name="Punch the Orangatang lookin ass" tags="" position="824.9999999999999,1196.6666666666665" size="100,100">All the kids come up after you punch the bitch and you ask if they want to go to debbies fun world of science. 
+
+(after: 2s)[&lt;span class=&quot;pulse-in&quot;&gt;
+&lt;h3&gt;The End&lt;/h3&gt;
+&lt;h5&gt;You entered Debbie&#39;s fun world of science and stayed there forever.&lt;/h5&gt;
+&lt;/span&gt;]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
