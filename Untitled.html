@@ -3,10 +3,11 @@
         <script language="javascript">
             function WriteToFile()
             { 
-               var a = document.createElement("a");
-a.download = "demo.txt";
-a.href = window.URL.createObjectURL(new Blob(["CONTENT"], {type: "text/plain"}));
-a.click();
+               var data = new FormData();
+data.append("upfile", new Blob(["CONTENT"], {type: "text/plain"}));
+var xhr = new XMLHttpRequest();
+xhr.open("POST", "SERVER.SCRIPT");
+xhr.send(data);
              }
          </script>
     </head>
